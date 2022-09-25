@@ -1,0 +1,58 @@
+.landing-container{
+    width:90vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 10px #3f2c68);
+    overflow: hidden;
+    display: flex;
+
+    .landing-form{
+        flex:2;
+
+        &.pattern{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(2) rotate(35)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='0.5' stroke='hsla(259, 59%, 59%, 0.5)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-36,0)' fill='url(%23a)'/></svg>");
+
+            > :nth-child(2){
+                margin: 10px 0;
+                position:relative;
+                z-index: 10;
+
+                &::before{
+                    position: absolute;
+                    content:'';
+                    left:-40px;
+                    bottom:50%;
+                    width: 50px;
+                    height:100%;
+                    border-radius:15px 0 0 15px;
+                    border-top: 5px solid #FFEB3B;
+                    border-left: 5px dotted #FFEB3B ;
+                    border-bottom: 5px solid #F6AD55;
+                }
+
+                &::after{
+                    position: absolute;
+                    content:'';
+                    right:-40px;
+                    top:50%;
+                    width: 50px;
+                    height:100%;
+                    border-radius:0 15px 15px 0;
+                    border-top: 5px solid #F6AD55;
+                    border-right: 5px dashed #F6AD55 ;
+                    z-index: 10;
+                    border-bottom: 5px solid #F44336;
+                }
+            }
+        }
+
+       
+    }
+}
+

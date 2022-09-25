@@ -1,10 +1,12 @@
-import TestComponent from "./testcomponent/test.component";
+import LandingStepComponent from "./landing-step/landing-step.component"
 
-const testComponents = {
-    TestComponent
+
+
+const landingComponents = {
+    LandingStepComponent
 }
 
 
 export {
-    testComponents
+    landingComponents
 }

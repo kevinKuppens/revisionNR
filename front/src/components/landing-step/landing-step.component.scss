@@ -1,0 +1,51 @@
+.landing-form-step{
+    background-color: white;
+    width:60%;
+    padding:0.5rem 1rem 1.5rem 1rem;
+    display:flex;
+    align-items: center;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 3px #44346c);
+
+    h4{
+        font-size: 9rem;
+        line-height: 0;
+        margin:0;
+        position:relative;
+        top:-20px;
+
+    }
+
+    .step{
+        height:100%;
+        padding-left:10px;
+        .step-header{
+            margin: 2rem 0 10px 0;
+            font-size: 1.2rem;
+            font-weight:700;
+            text-transform: uppercase;
+        }
+        p{
+            font-size:0.9rem;
+            font-weight: 300;
+        }
+    }
+
+    &.yellow{
+        h4, .step-header{
+            color:#FFEB3B;
+        }
+    }
+
+    &.orange{
+        h4, .step-header{
+            color:#F6AD55;
+        }
+    }
+
+    &.red{
+        h4, .step-header{
+            color: #F44336;
+        }
+    }
+}
